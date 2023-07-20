@@ -1,15 +1,12 @@
 
-import './App.css'
-
 function App() {
 
   return (
-    <>
-      <div>
-        Adriana
-      </div>
-    </>
+    <div className="bg-black text-white">
+      Adriana
+    </div>
   )
 }
 
 export default App
+
