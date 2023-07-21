@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
+import { Link } from "react-router-dom"
+
 
 const NavBar = () => {
   const  [showNav, setShowNav] = useState (false)
@@ -43,30 +45,30 @@ const NavBar = () => {
             'hidden'
           )}`}>
           <li>
-            <a href="#home" 
+            <Link to="/" 
               className="text-violet-500 hover:text-violet-700">
               Home
-            </a>
+            </Link>
           </li>
           
           <li>
-            <a href="#about" 
+            <Link to="/about"
               className="text-violet-500  hover:text-violet-700">
               About
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="#services" 
+            <Link to="/services" 
               className="text-violet-500  hover:text-violet-700	">
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" 
+            <Link to="/contact" 
             className="text-violet-500  hover:text-violet-700	">
-              contact
-            </a>
+              Contact
+            </Link>
           </li>
         </ul>
     </nav>

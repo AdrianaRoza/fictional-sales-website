@@ -1,11 +1,26 @@
-import NavBar from "./components/NavBar"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import Home from "./components/pages/Home"
+import About from "./components/pages/About"
+import Layout from "./components/pages/Layout"
+import Services from "./components/pages/Services"
+import Contact from "./components/pages/Contact"
 
 function App() {
 
   return (
-    <div>
-      <NavBar />
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />} >
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={< Contact/>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
