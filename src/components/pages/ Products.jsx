@@ -1,8 +1,9 @@
+import Cards from "./Cards"
 
 const Products = () => {
   return(
     <div>
-      Products
+      <Cards />
     </div>
   )
 }
