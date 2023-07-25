@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return(
     <nav 
-      className="bg-gray-200 py-2 flex 
+      className="bg-teal-50 py-2 flex 
       items-center justify-between">
 
       <div 
@@ -24,7 +24,7 @@ const NavBar = () => {
           className='h-full' 
         />
         <h1 
-          className='flex px-2  text-violet-500'>
+          className='flex px-3 text-[30px] font-serif font-bold text-green-950'>
           NST ART CNC
         </h1>
       </div>
@@ -33,8 +33,7 @@ const NavBar = () => {
         className="lg:hidden">
         <FaBars 
           onClick={handleToggleNav} 
-          className="text-xl mr-3 cursor-pointer
-          text-violet-500" />
+          className="text-xl mr-3 cursor-pointer" />
       </div>
 
         <ul 
@@ -46,27 +45,27 @@ const NavBar = () => {
           )}`}>
           <li>
             <Link to="/" 
-              className="text-violet-500 hover:text-violet-700">
+              className="text-green-950 hover:text-teal-500">
               Home
             </Link>
           </li>
           
           <li>
-            <Link to="/about"
-              className="text-violet-500  hover:text-violet-700">
-              About
+            <Link to="/products" 
+              className="text-green-950  hover:text-teal-500	">
+              Products
             </Link>
           </li>
 
           <li>
-            <Link to="/services" 
-              className="text-violet-500  hover:text-violet-700	">
-              Services
+            <Link to="/about"
+              className="text-green-950  hover:text-teal-500">
+              About
             </Link>
           </li>
           <li>
             <Link to="/contact" 
-            className="text-violet-500  hover:text-violet-700	">
+            className="text-green-950  hover:text-teal-500	">
               Contact
             </Link>
           </li>
