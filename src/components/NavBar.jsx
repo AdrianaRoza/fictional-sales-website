@@ -24,7 +24,8 @@ const NavBar = () => {
           className='h-full' 
         />
         <h1 
-          className='flex px-3 text-[30px] font-serif font-bold text-green-950'>
+          className='flex px-3 text-[30px] font-serif 
+            font-bold text-green-950'>
           NST ART CNC
         </h1>
       </div>
@@ -39,24 +40,28 @@ const NavBar = () => {
         {/*Menu for large screens */}
       <ul className="hidden lg:flex px-4 gap-2">
         <li>
-          <Link to="/" className="text-green-950 hover:text-teal-500">
+          <Link to="/" className="text-green-950 
+            hover:text-teal-500">
             Home
           </Link>
         </li>
 
         <li>
-          <Link to="/products" className="text-green-950 hover:text-teal-500">
+          <Link to="/products" className="text-green-950 
+            hover:text-teal-500">
             Products
           </Link>
         </li>
 
         <li>
-          <Link to="/about" className="text-green-950 hover:text-teal-500">
+          <Link to="/about" className="text-green-950 
+            hover:text-teal-500">
             About
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="text-green-950 hover:text-teal-500">
+          <Link to="/contact" className="text-green-950 
+            hover:text-teal-500">
             Contact
           </Link>
         </li>
@@ -66,7 +71,8 @@ const NavBar = () => {
       <ul
         className={`${
           showNav ? 'block' : 'hidden'
-        } lg:hidden absolute right-0 top-14 rounded-lg bg-teal-50 shadow-lg w-48 mt-2`}
+        } lg:hidden absolute right-0 top-14 rounded-lg 
+        bg-teal-50 shadow-lg w-48 mt-2`}
       >
         <li className="p-2">
           <Link

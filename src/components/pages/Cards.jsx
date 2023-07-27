@@ -1,5 +1,7 @@
 
 const Cards = () => {
+
+   // Array de produtos com informações sobre cada produto
   const product = [
     {
       title:"Produto 1",
@@ -50,24 +52,41 @@ const Cards = () => {
       image:"https://cdnm.westwing.com.br/glossary/uploads/br/2021/05/18045834/t%C3%A1bua-de-carne-de-madeira-churrasco-COZINHA.jpg",
     },
   ]
+
+   // Renderização do componente de cartões de produtos
   return(
     <div className="m-4 flex flex-col items-center">
-      <div className="m-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 card-container justify-center">
+
+      {/* Grade de cartões de produtos responsiva */}
+      <div className="m-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+        lg:grid-cols-4 gap-4 card-container justify-center">
         {product.map((product, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg flex flex-col justify-between">
+          // Cada objeto do array é mapeado para criar um cartão de produto
+        <div key={index} className="bg-white rounded-lg shadow-lg 
+          flex flex-col justify-between">
           <div className="flex items-center justify-center h-48">
+
+            {/* Seção da imagem do produto */} 
             <img
                 className="w-full h-full object-contain"
                 src={product.image}
                 alt={product.title}
               />
           </div>
-          <div className="p-4 flex flex-col items-center justify-center flex-grow">
+
+          {/* Seção de informações do produto */}
+          <div className="p-4 flex flex-col items-center 
+            justify-center flex-grow">
             <h2 className="text-xl font-semibold">{product.title}</h2>
             <p className="text-gray-600">{product.description}</p>
+
+            {/* Seção do preço e botão de compra */}
             <div className="mt-4 p-2 flex items-center justify-between">
-              <span className="text-green-500 font-semibold text-lg p-3">{product.price}</span>
-              <button className="px-4 py-2 bg-teal-950 hover:bg-teal-500 text-white rounded">Comprar</button>
+              <span className="text-green-500 font-semibold text-lg p-3">
+                {product.price}
+              </span>
+              <button className="px-4 py-2 bg-teal-950 hover:bg-teal-500
+               text-white rounded">Comprar</button>
             </div>
           </div>
         </div>
