@@ -43,7 +43,7 @@ const Cards = () => {
       title:"Produto 4",
       description:"Descrição do produto",
       price:"$190,00",
-      image:"https://cdn.leroymerlin.com.br/products/tabua_carne_1567485279_20bc_300x300.jpg",
+      image:"https://www.asteristic.com.br/wp-content/uploads/2018/03/tabua-corte-carne-churrasco-125-7-e1467856731760.jpg",
     },
     {
       title:"Produto 4",
@@ -81,7 +81,7 @@ const Cards = () => {
             <p className="text-gray-600">{product.description}</p>
 
             {/* Seção do preço e botão de compra */}
-            <div className="mt-4 p-2 flex items-center justify-between">
+            <div className="mt-4 p-2 flex flex-col items-center justify-between">
               <span className="text-green-500 font-semibold text-lg p-3">
                 {product.price}
               </span>

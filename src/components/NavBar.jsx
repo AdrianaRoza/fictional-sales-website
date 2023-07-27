@@ -54,9 +54,9 @@ const NavBar = () => {
         </li>
 
         <li>
-          <Link to="/about" className="text-green-950 
+          <Link to="/promotion" className="text-green-950 
             hover:text-teal-500">
-            About
+            Promotions
           </Link>
         </li>
         <li>
@@ -96,11 +96,11 @@ const NavBar = () => {
 
         <li className="p-2">
           <Link
-            to="/about"
+            to="/promotion"
             className="block text-green-950 hover:text-teal-500 text-center"
             onClick={() => setShowNav(false)}
           >
-            About
+           Promotion
           </Link>
         </li>
         <li className="p-2">
