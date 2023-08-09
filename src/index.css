@@ -14,12 +14,3 @@
 #root { 
   height: 100vh;
 }
-
-@layer utilities {
-  .text-stroke {
-    -webkit-text-fill-color: rgb(72, 124, 120);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke: 1px;
-  }
-
-}

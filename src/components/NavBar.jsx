@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaShoppingCart } from 'react-icons/fa'
 import { Link } from "react-router-dom"
 
 
@@ -19,13 +19,13 @@ const NavBar = () => {
         className="h-10 px-2 flex items-center">
 
         <img 
-          src="/tabua-de-cortar.png" 
+          src="/tabua-de-corta.png" 
           alt="tabua-de-cortar" 
           className='h-full' 
         />
         <h1 
-          className='flex px-3 text-[30px] font-serif 
-            font-bold text-green-950'>
+          className='flex px-3 text-[20px] font-serif 
+            font-bold text-teal-500'>
           NST ART CNC
         </h1>
       </div>
@@ -113,6 +113,11 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
+      {/* Cart icon */}
+        <div className="flex items-center ml-[-460px]">
+          <FaShoppingCart className="text-green-950 hover:text-teal-500 
+            text-xl mr-6 cursor-pointer" />
+        </div>
     </nav>
   )
 }
